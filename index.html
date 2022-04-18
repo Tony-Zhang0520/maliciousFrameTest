@@ -7,10 +7,10 @@
   <body>
     <h2> malicious site loaded </h2>
     <script type="text/javascript">
-      console.log(window);
-      console.log(window.parent);
-      console.log(parent);
-      console.log(parent.document.getElementById("root_ptcsgrid-3"));
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "https://192.168.48.147/Thingworx/Things", true);
+      xhr.setRequestHeader("accept", "application/json");
+      xhr.send();
     </script>
   </body>
 </html>
