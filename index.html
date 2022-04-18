@@ -7,8 +7,9 @@
   <body>
     <h2> malicious site loaded </h2>
     <script type="text/javascript">
-      alert("hello from attacker");
-      window.open("https://www.bing.com");
+      console.log(window);
+      console.log(window.parent);
+      console.log(window.parent.document);
     </script>
   </body>
 </html>
