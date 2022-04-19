@@ -15,14 +15,14 @@
       xhr1.setRequestHeader("accept", "application/json");
       xhr1.send();
       xhr1.onload = function (){
-        console.log(xhr.responseText);
+        console.log(xhr1.responseText);
       };
       
       xhr2.open("POST", "https://192.168.48.147/Thingworx/Resources/CurrentSessionInfo/Services/GetCurrentUser", true);
       xhr2.setRequestHeader("accept", "application/json");
       xhr2.send();
       xhr2.onload = function (){
-        console.log(xhr.responseText);
+        console.log(xhr2.responseText);
       };
     </script>
   </body>
