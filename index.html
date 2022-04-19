@@ -9,6 +9,7 @@
     <script type="text/javascript">
       var xhr = new XMLHttpRequest();
       xhr.open("GET", "https://192.168.48.147/Thingworx/Things", true);
+      xhr.setRequestHeader("appKey", "cf7fa38c-a75a-43f7-8232-39b54e4f56d7");
       xhr.setRequestHeader("accept", "application/json");
       xhr.send();
       xhr.onload() = function () {
