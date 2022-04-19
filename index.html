@@ -15,10 +15,11 @@
       xhr.send();
       xhr.onload = function (){
         console.log(xhr.responseText);
-      };
-      console.log(window.parent.document);
-      console.log(window.parent);
-      
+      };     
     </script>
+    <iframe src="http://192.168.48.147/Thingworx/Runtime/index.html?mashup=InsecureExpressions"> </iframe>
+    
+    window.location = "https://www.bing.com"
+    alert("hello from attacker");
   </body>
 </html>
